@@ -1,0 +1,909 @@
+body {
+    background: #FFFFFF; /* Устанавливает белый фон для страницы */
+    margin-top: 60px;
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none; /* Убирает маркеры у списков */
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+}
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 51px;
+    color: #000000;
+}
+
+h4 {
+    margin: 0;
+}
+
+header {
+    display: flex; /* Использует Flexbox для размещения дочерних элементов */
+    flex-direction: column; /* Располагает дочерние элементы в колонку */
+    position: relative; /* Устанавливает абсолютное позиционирование для header */
+    top: 30px; /* Сдвигает header вниз на 60 пикселей */
+}
+
+.nav_bar {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    justify-content: space-between; /* Распределяет пространство между дочерними элементами */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    padding: 0px 100px; /* Устанавливает внутренние отступы (100px слева и справа) */
+}
+
+.logo {
+    width: 219.54px; /* Устанавливает фиксированную ширину для логотипа */
+    height: 36px; /* Устанавливает фиксированную высоту для логотипа */
+}
+
+.menu {
+    display: flex; /* Использует Flexbox для меню */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    justify-content: center; /* Выравнивает элементы по центру */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    padding: 0px; /* Убирает внутренние отступы */
+    gap: 5%; /* Устанавливает расстояние между дочерними элементами (2%) */
+}
+
+.menu ul {
+    display: flex; /* Использует Flexbox для списка в меню */
+    justify-content: center; /* Выравнивает список по центру */
+}
+
+.menu li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.menu a {
+    font-family: 'Space Grotesk', sans-serif; /* Устанавливает шрифт для ссылок */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта */
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: #0d0d0d; /* Устанавливает цвет текста ссылок черным */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+}
+
+.button {
+    box-sizing: border-box; /* Устанавливает расчет размеров элемента с учетом padding и border */
+    display: flex; /* Использует Flexbox для кнопки */
+    flex-direction: row; /* Располагает элементы внутри кнопки в строку */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю кнопки */
+    padding: 20px 35px; /* Устанавливает внутренние отступы (20px сверху и снизу, 35px слева и справа) */
+    gap: 10px; /* Устанавливает расстояние между дочерними элементами кнопки */
+    border: 1px solid #080808; /* Устанавливает границу кнопки */
+    border-radius: 14px; /* Устанавливает скругление углов кнопки */
+    font-family: 'Space Grotesk';  /* Устанавливает шрифт для текста кнопки */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта текста кнопки */
+    text-align: center; /* Выравнивает текст по центру внутри кнопки */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку внутри кнопки */
+    color: #080808; /* Устанавливает цвет текста кнопки черным */
+    background: #ffffff; /* Устанавливает белый цвет фона кнопки */
+}
+
+.button:hover {
+    background-color: #030303; /* Изменяет цвет фона на черный при наведении на кнопку */
+    color: white; /* Изменяет цвет текста на белый при наведении */
+}
+
+.button:active {
+    background-color: #080808; /* Изменяет цвет фона на темный при нажатии на кнопку */
+    transform: scale(0.98); /* Уменьшает размер кнопки при нажатии для эффекта нажатия */
+    border-color: #f0f5f0; /* Изменяет цвет границы на темный при нажатии */
+}
+
+.main-window {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.main{
+    font-family: "Space Grotesk";    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 190px;
+}
+.window{
+    margin-top: 70px;
+}
+
+.pic{
+    margin-right: 80px;
+    margin-bottom: 35px;
+} 
+
+
+.button-main{
+    box-sizing: border-box; /* Устанавливает расчет размеров элемента с учетом padding и border */
+    display: flex; /* Использует Flexbox для кнопки */
+    flex-direction: row; /* Располагает элементы внутри кнопки в строку */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю кнопки */
+    padding: 16px 28px; /* Устанавливает внутренние отступы (20px сверху и снизу, 35px слева и справа) */
+    gap: 10px;
+    font-family: 'Space Grotesk'; /* Устанавливает расстояние между дочерними элементами кнопки */
+    border: 1px solid #202424; /* Устанавливает границу кнопки */
+    border-radius: 12px; /* Устанавливает скругление углов кнопки */
+    font-style: normal; /* Устанавливает нормальный стиль шрифта */
+    font-weight: 400; /* Устанавливает нормальную жирность шрифта */
+    font-size: 20px; /* Устанавливает размер шрифта текста кнопки */
+    line-height: 28px; /* Устанавливает высоту строки */
+    text-align: center; /* Выравнивает текст по центру внутри кнопки */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку внутри кнопки */
+    color: #d3d4d4; /* Устанавливает цвет текста кнопки белым */
+    background: #000000; 
+}
+.button-main:hover {
+    background-color: #9a9a9a; /* Изменяет цвет фона на черный при наведении на кнопку */
+    color: rgb(2, 2, 2); /* Изменяет цвет текста на белый при наведении */
+}
+
+.button-main:active {
+    background-color: #f0f0f0; /* Изменяет цвет фона на темный при нажатии на кнопку */
+    transform: scale(0.98); /* Уменьшает размер кнопки при нажатии для эффекта нажатия */
+    border-color: #252725; /* Изменяет цвет границы на темный при нажатии */
+}
+
+.page{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 48px;
+    flex: none;
+    order: 2;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-grow: 0;
+}
+
+
+#page-img img {
+    mix-blend-mode: luminosity;
+}
+
+.long-element {
+    display: flex; /* Использует Flexbox для навигационной панели */
+    flex-direction: row; /* Располагает дочерние элементы в строку */
+    margin: 140px 100px 80px 100px;
+}
+
+.label-long-element {
+    padding: 0px 7px;
+    background: #B9FF66;
+    border-radius: 7px;
+    margin-right: 40px;
+}
+
+/* At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include: */
+
+.text-long-element {
+    width: 580px;
+}
+
+.text-long-element p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+footer {
+    width: 100%;
+}
+
+.footer_nav_bar {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 60px 50px;
+    margin: 140px 100px 0px 100px;
+    gap: 50px;
+    /* Dark */
+    background: #191A23;
+    border-radius: 45px 45px 0px 0px;
+}
+
+.footer_nav_bar_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo2{
+    width: 180px;
+    height: 29px;
+}
+
+#menu-footer a{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+#menu-footer li {
+    margin: 0 20px; /* Устанавливает горизонтальные отступы для элементов списка */
+}
+
+.logo-s {
+    padding: 0px 8px 0px 8px;
+}
+
+.footer_nav_bar_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_nav_bar_info_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us {
+    display: flex;
+    width: fit-content;
+    padding: 0px 7px;
+    background: #B9FF66;
+    border-radius: 7px;
+    margin-bottom: 27px;
+}
+
+
+.contact-us h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.info p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#last-str {
+    margin-bottom: 0;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 58px 40px;
+    gap: 20px;
+    background: #292A32;
+    border-radius: 14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"] {
+    /* Field */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 35px;
+    gap: 10px;
+
+    background: #292A32;
+    border: 1px solid #FFFFFF;
+    border-radius: 14px;
+
+
+    /* p */
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+    outline: none;
+    margin-right: 20px;
+
+}
+input[type="submit"] {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 35px;
+    gap: 10px;
+    /* Green */
+    background: #B9FF66;
+    border-radius: 14px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+
+    /* Black */
+    color: #000000;
+    border-width: 0px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+    border-top: 1px solid #FFFFFF;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.privat-policy {
+    margin-left: 50px;
+}
+
+.privat-policy a {
+    color: #ffffff; /* Устанавливает цвет текста ссылок черным */
+}
+
+.f-sl-sb{
+display: flex;
+flex-direction: column;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 123px;
+}
+
+.f-rw-sb1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.h3-1{
+background-color:#B9FF66; 
+display: block;
+margin-bottom: 0px;
+width: fit-content;
+border-radius: 7px; 
+padding-left: 7px; 
+margin-top: 0px;
+padding-right: 7px;
+font-family: 'Space Grotesk';
+font-style: normal;
+font-size: 28px;
+font-weight:600;
+}
+
+.text-card1{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+padding: 50px;
+gap: 77px;
+background: #F3F3F3;
+border: 1px solid #191A23;
+box-shadow: 0px 5px 0px #191A23;
+border-radius: 45px;
+flex: none;
+margin-right: 20px;
+order: 0;
+flex-grow: 0;
+}
+
+.link1{
+outline: none;  
+text-decoration: none;  
+color: #000;
+}
+
+.text-card2{
+    box-sizing: border-box; 
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 77px;
+    background:  #B9FF66;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.f-rw-sb2{
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+}
+
+.text-card3{
+    box-sizing: border-box; 
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 77px;
+    background:  #080808;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.link2{
+    outline: none;  
+    text-decoration: none;  
+    color: #fffcfc;
+    }
+        
+.text-card4{
+    box-sizing: border-box; 
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 77px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.f-rw-sb3{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.text-card5{
+    box-sizing: border-box; 
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 77px;
+    background: #B9FF66;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+.text-card6{
+    box-sizing: border-box; 
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 77px;
+    background: #000000;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    border-radius: 45px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+.boomy{
+display: flex;
+flex-direction: row;
+margin-left: 100px;
+margin-right: 100px;
+align-items: center;
+padding: 0px 60px;
+background: #F3F3F3;
+border-radius: 45px;
+flex: none;
+justify-content: space-between;
+order: 0;
+flex-grow: 0;
+margin-bottom: 163.5px;
+}
+
+.boomboom{
+margin-right: 186px;
+margin-left: 5px;
+margin-bottom: 60px;
+}
+.sImage {
+    margin-right: 135px; 
+    position:absolute;
+    top:2320px;
+    left:980px;
+    overflow:visible;
+    height:380px;
+}
+.boomboom p {
+    width:550px;
+}
+.bom{
+margin-top: 26px;
+font-size: 20px;
+border-radius: 14px;
+font-family: "Space Grotesk";
+padding: 20px 35px 20px 35px;
+color: white;
+background-color: #080808;
+}
+.bom:hover{
+background-color: whitesmoke;   
+color: #000000; 
+}
+
+.colum{
+display: flex;
+background: #191A23;
+color: white;
+border-radius: 45px;
+flex-direction: row;
+align-items: flex-start;
+font-weight: 50;
+padding: 70px 60px 70px 70px;
+margin-bottom: 140px;
+margin-left: 100px;
+margin-right: 100px;
+}
+.colum-text{
+border-right: 1px solid rgb(255, 253, 253);
+}
+
+.lonk{
+    outline: none; 
+    text-decoration: none;  
+    color:  #B9FF66;
+}
+
+.card1{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 41px 60px 41px 60px;
+background: #F3F3F3;
+border: 1px solid #191A23;
+justify-content: space-between;
+box-shadow: 0px 5px 0px #191A23;
+align-items: center;
+border-radius: 45px;
+flex: none;
+left: 3px;
+order: 1;
+margin-bottom: 30px;
+width: 1234px;
+height: 159px;
+flex-grow: 0;
+}
+
+.card2{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 41px 60px;
+background: #F3F3F3;
+border: 1px solid #191A23;
+justify-content: space-between;
+box-shadow: 0px 5px 0px #191A23;
+align-items: center;
+border-radius: 45px;
+flex: none;
+left: 3px;
+order: 1;
+margin-bottom: 30px;
+width: 1234px;
+height: 159px;
+flex-grow: 0;
+}
+.card3{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 41px 60px 41px 60px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    justify-content: space-between;
+    box-shadow: 0px 5px 0px #191A23;
+    align-items: center;
+    border-radius: 45px;
+    flex: none;
+    left: 3px;
+    order: 1;
+    margin-bottom: 30px;
+    width: 1234px;
+    height: 159px;
+    flex-grow: 0;
+    }
+    
+.card4{
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 41px 60px 41px 60px;
+background: #F3F3F3;
+border: 1px solid #191A23;
+justify-content: space-between;
+box-shadow: 0px 5px 0px #191A23;
+align-items: center;
+border-radius: 45px;
+flex: none;
+left: 3px;
+order: 1;
+margin-bottom: 30px;
+width: 1234px;
+height: 159px;
+flex-grow: 0;
+}
+  
+.card5{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 41px 60px 41px 60px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    justify-content: space-between;
+    box-shadow: 0px 5px 0px #191A23;
+    align-items: center;
+    border-radius: 45px;
+    flex: none;
+    left: 3px;
+    order: 1;
+    margin-bottom: 30px;
+    width: 1234px;
+    height: 159px;
+    flex-grow: 0;
+}
+ 
+.card6{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 41px 60px 41px 60px;
+    background: #F3F3F3;
+    border: 1px solid #191A23;
+    justify-content: space-between;
+    box-shadow: 0px 5px 0px #191A23;
+    align-items: center;
+    border-radius: 45px;
+    flex: none;
+    left: 3px;
+    order: 1;
+    width: 1234px;
+    height: 159px;
+    flex-grow: 0;
+    }    
+
+.sec7{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 85px;
+}   
+.block1_sec7 { 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 387px;
+    height: 331px;
+    background: #FFFFFF;
+    border: 1px solid #191A23;
+    box-shadow: 0px 5px 0px #191A23;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 45px;
+    border-bottom: 5px solid black;
+}
+.line1_sec7 {
+    display: flex;
+    justify-content: center;
+    margin: 0px 100px 0px 100px;
+}
+.head1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.content_block1 {
+    margin: 40px 35px 40px 35px;
+}
+
+.block_sms{
+margin-top: 80px; 
+margin-left: 100px;
+margin-right: 100px;
+display: inline-flex;
+width: 1240px;
+height: 600px;
+left: 100px;
+top: 6033px;
+align-items: center;
+padding: 25px 0px 68px 0px;
+background: #191A23;
+border-radius: 45px;
+}
+.sms_text{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 20px;
+margin: 0 auto;
+width: 606px;
+height: 335px;
+margin-top: 5px;
+margin-left: 290px;
+margin-right: 290px;
+margin-bottom: 124px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.sms{
+display: flex;
+font-weight: 200;
+font-size: 18px;
+flex-direction: row;
+color: white;
+align-items: flex-start;
+width: 631px;
+height: 260px;
+flex: none;
+order: 0;
+margin-right:290px;
+margin-bottom:20px; 
+margin-left: 290px;
+flex-grow: 0;
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 260;
+line-height: 23px;
+}
+.sms2{
+width: 526px;
+font-family: 'Space Grotesk';
+font-style: normal;
+flex-direction: flex-start;
+font-size: 20px;
+font-weight: 400;
+line-height: normal;
+align-items: flex-start;
+}
+
+.wihteblock{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding-top: 60px 100px 80px;
+gap: 10px;
+width: 1240px;
+height: 773px;
+background: #F3F3F3;
+border-radius: 45px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 140px;
+}
+
+.wihteblock-text{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+margin-top: 40px;
+width: 556px;
+height: 633px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 60px 0px 80px 100px;
+}
+.wihteblock-text1{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.wihteblock-text2{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex: none;
+flex-grow: 0;
+margin-top: 40px;
+width: 556px;
+height: 457px;
+margin-right: 584px;
+}
+.form-1 {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text2"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 22px 35px;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 14px;
+}
+
+
+
+
